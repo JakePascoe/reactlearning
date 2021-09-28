@@ -1,4 +1,7 @@
 import ExpenseAll from "./comp/Expense/ExpenseAll";
+import NewExpense from "./comp/UserInput/NewExpense";
+import BarGraph from "./comp/Test/barGraph";
+import Chartify from "chartify";
 function App() {
   const expenses = [
     {
@@ -26,9 +29,10 @@ function App() {
       date: new Date(2021, 5, 12),
     },
   ];
+
   return (
     <div>
-      <h2>Lets Get Started</h2>
+      <NewExpense />
       <ExpenseAll data={expenses} />
     </div>
   );
